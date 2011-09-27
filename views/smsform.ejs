@@ -1,0 +1,22 @@
+<html>
+<head>
+	<title></title>
+    <style type="text/css">
+        body  { font-size:20px; } 
+        input { font-size:20px; } 
+        .inp  { width: 300px; margin-right:40px;}
+        .btn  { width: 100px; margin-left:40px;}
+    </style>
+</head>
+
+<body>
+	<p><h1><%= title %></h1></p>
+
+	<form name="input" action="/sendsms" method="get">
+	Mobile number: <input class="inp" type="text" name="mobilenumber" />
+	Message:       <input class="inp" type="text" name="message" />
+	               <input class="btn" type="submit" value="Send" />
+	</form>
+
+</body>
+</html>

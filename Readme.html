@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta name="keywords" content="MultiMarkdown, Markdown, XML, XHTML, XSLT, PDF"/>
+	<link type="text/css" rel="stylesheet" href="css/print.css"/>
+	<link type="text/css" rel="stylesheet" href="css/doc-less.css"/>
+</head>
+<body>
+<p>Feel free to download and mess around with this app, it may or may not be updated regularly, when it is we will publicise on our twitter feed (@BlueVia)</p>
+
+<h2 id="getyournode.jsenvironmentprepared">Get your Node.js environment prepared</h2>
+
+<p>The sample has been tested with Node.js v0.4.12 and should work with v0.4.x .
+It needs 5 node modules that can be installed with &#8216;npm&#8217;:</p>
+
+<ul>
+<li>mime</li>
+<li>qs</li>
+<li>connect</li>
+<li>express</li>
+<li>ejs</li>
+</ul>
+
+<p>plus the files</p>
+
+<ul>
+<li>oauth.js</li>
+<li>sha1.js</li>
+<li>_utils.js</li>
+</ul>
+
+<p>from <a href="https://github.com/alfredwesterveld/node-auth.git">https://github.com/alfredwesterveld/node-auth.git</a>: </p>
+
+<h2 id="setupandpersonalsettings">Setup and personal settings</h2>
+
+<p>At the beginning of &#8216;server.js&#8217; 4 variables have to be adapted</p>
+
+<pre><code>    // CONFIG
+
+    var consumerKey    = &quot;xxxxxxxxxxxxxxxx&quot;;
+    var consumerSecret = &quot;xxxxxxxxxxxx&quot;;
+    var callbackUrl = &quot;http://localhost:3000/accesstoken&quot;;
+    var sandbox = &quot;_Sandbox&quot;;
+</code></pre>
+
+<p>Add your BlueVia consumer credentials, check whether you keep on using port 3000 and change &#8220;_Sandbox&#8221; to &quot;&quot; if you want to test against the real mobile network</p>
+
+<h2 id="starttheserveranduseit">Start the server and use it</h2>
+
+<p>Go to the terminal and call</p>
+
+<pre><code>    node server.js
+</code></pre>
+
+<p>and then browse to http://localhost:3000 if yopu haven&#8217;t changed the port. It immediately will start with the authorization steps at BlueVia.</p>
+</body>
+</html>
