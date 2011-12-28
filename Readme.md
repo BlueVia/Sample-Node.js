@@ -9,23 +9,17 @@ Feel free to download and mess around with this app, it may or may not be update
 
 ## Get your Node.js environment prepared
 
-The sample has been tested with Node.js v0.4.12 and should work with v0.4.x .
-It needs 5 node modules that can be installed with 'npm':
+The sample has been tested with Node.js v0.6.6.
+It needs 7 node modules that can be installed with 'npm':
 
-- mime
 - qs
+- mime
 - connect
+- mkdirp
 - express
+- oauth
 - ejs
 
-plus the files
-
-- oauth.js
-- sha1.js
-- _utils.js
-
-from [https://github.com/alfredwesterveld/node-auth.git](https://github.com/alfredwesterveld/node-auth.git): 
-	
 ## Setup and personal settings
 
 At the beginning of 'server.js' 4 variables have to be adapted

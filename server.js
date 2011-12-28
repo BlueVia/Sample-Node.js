@@ -27,7 +27,7 @@
 //
 
 express		= require('express'),
-OAuth		= require('./oauth').OAuth,
+OAuth		= require('oauth').OAuth,
 ejs			= require("ejs");
 
 // CONFIG
